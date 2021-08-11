@@ -1,18 +1,18 @@
 // ==UserScript==
-// @author           Jane Doe <jane@doe.com>
-// @contributors     John Doe <john@doe.com>
-// @description      template repository for userscripters' projects
+// @author           Daniil
+// @contributors     Oleg Valter <oleg.a.valter@gmail.com>
+// @description      Gets the close vote count for people without the close vote priviledge
 // @grant            none
-// @homepage         https://github.com/userscripters/template#readme
-// @match            https://*.askubuntu.com/*
-// @match            https://*.mathoverflow.net/*
-// @match            https://*.serverfault.com/*
-// @match            https://*.stackapps.com/*
-// @match            https://*.stackexchange.com/*
-// @match            https://*.stackoverflow.com/*
-// @name             template
+// @homepage         https://github.com/userscripters/retrieveCVRVDV#readme
+// @match            https://*.askubuntu.com/questions/*
+// @match            https://*.mathoverflow.net/questions/*
+// @match            https://*.serverfault.com/questions/*
+// @match            https://*.stackapps.com/questions/*
+// @match            https://*.stackexchange.com/questions/*
+// @match            https://*.stackoverflow.com/questions/*
+// @name             close-reopen-delete-vote-retriever
 // @namespace        userscripters
-// @source           git+https://github.com/userscripters/template.git
-// @supportURL       https://github.com/userscripters/template/issues
-// @version          1.0.0
+// @source           git+https://github.com/userscripters/retrieveCVRVDV.git
+// @supportURL       https://github.com/userscripters/retrieveCVRVDV/issues
+// @version          1.1.0
 // ==/UserScript==
