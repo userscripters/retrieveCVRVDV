@@ -1,5 +1,5 @@
 {
-  "name": "@userscripters/template",
+  "name": "@userscripters/close-reopen-delete-vote-retriever",
   "version": "1.1.0",
   "description": "Gets the close vote count for people without the close vote priviledge",
   "scripts": {
@@ -18,27 +18,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/userscripters/template.git"
+    "url": "git+https://github.com/userscripters/retrieveCVRVDV.git"
   },
   "keywords": [
     "userscripts",
     "stackoverflow"
   ],
   "author": {
-    "name": "Jane Doe",
-    "email": "jane@doe.com"
+    "name": "Daniil"
   },
   "contributors": [
     {
-      "name": "John Doe",
-      "email": "john@doe.com"
+      "name": "Oleg Valter",
+      "email": "oleg.a.valter@gmail.com"
     }
   ],
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/userscripters/template/issues"
+    "url": "https://github.com/userscripters/retrieveCVRVDV/issues"
   },
-  "homepage": "https://github.com/userscripters/template#readme",
+  "homepage": "https://github.com/userscripters/retrieveCVRVDV#readme",
   "devDependencies": {
     "@types/chai": "^4.2.21",
     "@types/chai-as-promised": "^7.1.4",
