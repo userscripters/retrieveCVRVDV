@@ -3,10 +3,12 @@
 
 | Author       | Daniil |
 | :----------- | :----------------------- |
-| Name         | @userscripters/close-reopen-delete-vote-retriever    |
-| Description  | Gets the close vote count for people without the close vote priviledge           |
-| License      | [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later)                 |
-| Version      | 1.1.0               |
+| Contributors | Oleg Valter<br>[oleg.a.valter@gmail.com](mailto:oleg.a.valter@gmail.com) |
+| Name | @userscripters/close-reopen-delete-vote-retriever |
+| Description | Gets the close vote count for people without the close vote priviledge |
+| License | [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later) |
+| Version | 1.1.0 |
+
 
 # Support
 

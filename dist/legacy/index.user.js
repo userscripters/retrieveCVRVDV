@@ -4,13 +4,27 @@
 // @description      Gets the close vote count for people without the close vote priviledge
 // @grant            none
 // @homepage         https://github.com/userscripters/retrieveCVRVDV#readme
-// @match            https://*.askubuntu.com/questions/*
-// @match            https://*.mathoverflow.net/questions/*
-// @match            https://*.serverfault.com/questions/*
-// @match            https://*.stackapps.com/questions/*
 // @match            https://*.stackexchange.com/questions/*
-// @match            https://*.stackoverflow.com/questions/*
-// @name             close-reopen-delete-vote-retriever
+// @match            https://askubuntu.com/questions/*
+// @match            https://es.meta.stackoverflow.com/questions/*
+// @match            https://es.stackoverflow.com/questions/*
+// @match            https://ja.meta.stackoverflow.com/questions/*
+// @match            https://ja.stackoverflow.com/questions/*
+// @match            https://mathoverflow.net/questions/*
+// @match            https://meta.askubuntu.com/questions/*
+// @match            https://meta.mathoverflow.net/questions/*
+// @match            https://meta.serverfault.com/questions/*
+// @match            https://meta.stackoverflow.com/questions/*
+// @match            https://meta.superuser.com/questions/*
+// @match            https://pt.meta.stackoverflow.com/questions/*
+// @match            https://pt.stackoverflow.com/questions/*
+// @match            https://ru.meta.stackoverflow.com/questions/*
+// @match            https://ru.stackoverflow.com/questions/*
+// @match            https://serverfault.com/questions/*
+// @match            https://stackapps.com/questions/*
+// @match            https://stackoverflow.com/questions/*
+// @match            https://superuser.com/questions/*
+// @name             Close Reopen Delete Vote Retriever
 // @namespace        userscripters
 // @run-at           document-start
 // @source           git+https://github.com/userscripters/retrieveCVRVDV.git
@@ -76,7 +90,7 @@ var __read = (this && this.__read) || function (o, n) {
     w.addEventListener("load", function () { return __awaiter(void 0, void 0, void 0, function () {
         function displayCount(type, variable) {
             $("#question-header").next().children().last().addClass("mr16");
-            $("#question-header").next().append("<div class=\"grid--cell ws-nowrap mb8\"><span class=\"fc-light mr2\">" + type + " votes</span> " + variable + "</div>");
+            $("#question-header").next().append("<div class=\"grid--cell ws-nowrap mb8\"><span class=\"fc-light mr2\">".concat(type, " votes</span> ").concat(variable, "</div>"));
         }
         var canSeeDVs, canSeeCVs, API_KEY, site, questionid, parameters, url, resp, data, _a, _b, close_vote_count, reopen_vote_count, delete_vote_count, closed_date;
         return __generator(this, function (_c) {
@@ -90,7 +104,7 @@ var __read = (this && this.__read) || function (o, n) {
                     site = l.hostname;
                     questionid = StackExchange.question.getQuestionId();
                     parameters = { site: site, filter: "!*7PiiPofIm9zBW4e_7IOD-h_DExn", key: API_KEY };
-                    url = "https://api.stackexchange.com/2.2/questions/" + questionid + "?" + Object.keys(parameters).map(function (k) { return k + "=" + parameters[k]; }).join("&");
+                    url = "https://api.stackexchange.com/2.2/questions/" + questionid + "?" + Object.keys(parameters).map(function (k) { return "".concat(k, "=").concat(parameters[k]); }).join("&");
                     return [4, fetch(url)];
                 case 1:
                     resp = _c.sent();
