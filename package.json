@@ -43,7 +43,7 @@
     "@types/chai-as-promised": "^7.1.5",
     "@types/jquery": "^3.5.14",
     "@types/mocha": "^9.1.1",
-    "@types/node": "^18.0.5",
+    "@types/node": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
     "@userscripters/generate-headers": "^3.4.0",
