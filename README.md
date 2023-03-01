@@ -7,7 +7,7 @@
 | Name | @userscripters/close-reopen-delete-vote-retriever |
 | Description | Gets the close vote count for people without the close vote priviledge |
 | License | [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later) |
-| Version | 1.1.0 |
+| Version | 1.1.1 |
 
 
 # Support

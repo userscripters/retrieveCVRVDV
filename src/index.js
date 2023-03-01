@@ -3,7 +3,7 @@
     "use strict";
     w.addEventListener("load", async () => {
         const canSeeDVs = StackExchange.options.user.canSeeDeletedPosts;
-        const canSeeCVs = !!document.getElementsByClassName("close-question-link").length;
+        const canSeeCVs = !!document.getElementsByClassName("js-close-question-link").length;
         if (canSeeDVs && canSeeCVs) return;
 
         const API_KEY = "5uXDnm8574pzkaCadaFv)A((";
@@ -20,7 +20,7 @@
          */
         function displayCount(type, variable) {
             $("#question-header").next().children().last().addClass("mr16");
-            $("#question-header").next().append(`<div class="grid--cell ws-nowrap mb8"><span class="fc-light mr2">${type} votes</span> ${variable}</div>`);
+            $("#question-header").next().append(`<div class="flex--item ws-nowrap mb8"><span class="fc-light mr2">${type} votes</span> ${variable}</div>`);
         }
 
         const resp = await fetch(url);

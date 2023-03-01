@@ -1,35 +1,35 @@
 // ==UserScript==
-// @author           Daniil
-// @contributors     Oleg Valter <oleg.a.valter@gmail.com>
-// @description      Gets the close vote count for people without the close vote priviledge
-// @grant            none
-// @homepage         https://github.com/userscripters/retrieveCVRVDV#readme
-// @match            https://*.stackexchange.com/questions/*
-// @match            https://askubuntu.com/questions/*
-// @match            https://es.meta.stackoverflow.com/questions/*
-// @match            https://es.stackoverflow.com/questions/*
-// @match            https://ja.meta.stackoverflow.com/questions/*
-// @match            https://ja.stackoverflow.com/questions/*
-// @match            https://mathoverflow.net/questions/*
-// @match            https://meta.askubuntu.com/questions/*
-// @match            https://meta.mathoverflow.net/questions/*
-// @match            https://meta.serverfault.com/questions/*
-// @match            https://meta.stackoverflow.com/questions/*
-// @match            https://meta.superuser.com/questions/*
-// @match            https://pt.meta.stackoverflow.com/questions/*
-// @match            https://pt.stackoverflow.com/questions/*
-// @match            https://ru.meta.stackoverflow.com/questions/*
-// @match            https://ru.stackoverflow.com/questions/*
-// @match            https://serverfault.com/questions/*
-// @match            https://stackapps.com/questions/*
-// @match            https://stackoverflow.com/questions/*
-// @match            https://superuser.com/questions/*
-// @name             Close Reopen Delete Vote Retriever
-// @namespace        userscripters
-// @run-at           document-start
-// @source           git+https://github.com/userscripters/retrieveCVRVDV.git
-// @supportURL       https://github.com/userscripters/retrieveCVRVDV/issues
-// @version          1.1.0
+// @name            Close Reopen Delete Vote Retriever
+// @author          Daniil
+// @contributors    Oleg Valter <oleg.a.valter@gmail.com>
+// @description     Gets the close vote count for people without the close vote priviledge
+// @grant           none
+// @homepage        https://github.com/userscripters/retrieveCVRVDV#readme
+// @match           https://stackoverflow.com/questions/*
+// @match           https://serverfault.com/questions/*
+// @match           https://superuser.com/questions/*
+// @match           https://*.stackexchange.com/questions/*
+// @match           https://askubuntu.com/questions/*
+// @match           https://stackapps.com/questions/*
+// @match           https://mathoverflow.net/questions/*
+// @match           https://pt.stackoverflow.com/questions/*
+// @match           https://ja.stackoverflow.com/questions/*
+// @match           https://ru.stackoverflow.com/questions/*
+// @match           https://es.stackoverflow.com/questions/*
+// @match           https://meta.stackoverflow.com/questions/*
+// @match           https://meta.serverfault.com/questions/*
+// @match           https://meta.superuser.com/questions/*
+// @match           https://meta.askubuntu.com/questions/*
+// @match           https://meta.mathoverflow.net/questions/*
+// @match           https://pt.meta.stackoverflow.com/questions/*
+// @match           https://ja.meta.stackoverflow.com/questions/*
+// @match           https://ru.meta.stackoverflow.com/questions/*
+// @match           https://es.meta.stackoverflow.com/questions/*
+// @namespace       userscripters
+// @run-at          document-start
+// @source          git+https://github.com/userscripters/retrieveCVRVDV.git
+// @supportURL      https://github.com/userscripters/retrieveCVRVDV/issues
+// @version         1.1.1
 // ==/UserScript==
 
 "use strict";
@@ -48,7 +48,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     function verb(n) { return function (v) { return step([n, v]); }; }
     function step(op) {
         if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
             if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
             if (y = 0, t) op = [op[0] & 2, t.value];
             switch (op[0]) {
@@ -90,14 +90,14 @@ var __read = (this && this.__read) || function (o, n) {
     w.addEventListener("load", function () { return __awaiter(void 0, void 0, void 0, function () {
         function displayCount(type, variable) {
             $("#question-header").next().children().last().addClass("mr16");
-            $("#question-header").next().append("<div class=\"grid--cell ws-nowrap mb8\"><span class=\"fc-light mr2\">".concat(type, " votes</span> ").concat(variable, "</div>"));
+            $("#question-header").next().append("<div class=\"flex--item ws-nowrap mb8\"><span class=\"fc-light mr2\">".concat(type, " votes</span> ").concat(variable, "</div>"));
         }
         var canSeeDVs, canSeeCVs, API_KEY, site, questionid, parameters, url, resp, data, _a, _b, close_vote_count, reopen_vote_count, delete_vote_count, closed_date;
         return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
                     canSeeDVs = StackExchange.options.user.canSeeDeletedPosts;
-                    canSeeCVs = !!document.getElementsByClassName("close-question-link").length;
+                    canSeeCVs = !!document.getElementsByClassName("js-close-question-link").length;
                     if (canSeeDVs && canSeeCVs)
                         return [2];
                     API_KEY = "5uXDnm8574pzkaCadaFv)A((";
